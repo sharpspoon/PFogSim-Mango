@@ -84,7 +84,8 @@ public class GPSVectorMobility extends MobilityModel {
 		for(int i=0; i<numberOfMobileDevices; i++) {
 			treeMapArray.add(i, new TreeMap<Double, Location>());
 			userTreeMapArray.add(i, new TreeMap<Double, Location>());
-			
+		} // right bracket added by Chengyu on 12/15/2021 to change the loop structure
+		
 			//Picks a random wireless access point to start at
 			//Shaik modified - to set all mobile devices to same host Fog node - int randDatacenterId = SimUtils.getRandomNumber(0, accessPoints.size()-1);
             /**int randDatacenterId = SimUtils.getRandomNumber(0, accessPoints.size()-1);
@@ -119,8 +120,8 @@ public class GPSVectorMobility extends MobilityModel {
 			}
 			NodeSim node = itr.next();
 			if (node.getLevel() == 1) {
-				treeMapArray.add(devicesAssigned, new TreeMap<Double, Location>());
-				userTreeMapArray.add(devicesAssigned, new TreeMap<Double, Location>());
+//				treeMapArray.add(devicesAssigned, new TreeMap<Double, Location>()); // commented out by Chengyu to avoid redundant work
+//				userTreeMapArray.add(devicesAssigned, new TreeMap<Double, Location>()); // commented out by Chengyu
 				double x_pos = node.getLocation().getXPos();
 				double x_pos2 = node.getLocation().getXPos();
 				double y_pos = node.getLocation().getYPos();
@@ -153,7 +154,8 @@ public class GPSVectorMobility extends MobilityModel {
 //			treeMapArray.get(i).put((double)10, new Location(wlan_id, x_pos, y_pos, alt));
 //			userTreeMapArray.get(i).put((double)10, new Location(wlan_id2, x_pos2, y_pos2,alt2));
 			
-		}
+//		} line commented out by Chengyu on12/15/2021
+		
 		treeMapArray.addAll(userTreeMapArray);
 
 		Random rng = new Random(SimSettings.getInstance().getRandomSeed());
