@@ -1244,7 +1244,7 @@ SimSettings.DELIMITER;
 		totalMipsUtil = 0;
 		for (int i = 0; i < fogLayerAvgMipsUtil.length; i++) {
 			//printLine("\tLevel " + (i + 1) + ": " + String.format("%.6f", ((double)fogLayerAvgNwUtil[i])));
-			printLine("\tLevel " + (i + 1) + ": " + String.format("%.2f", ((double)fogLayerAvgNwUtil[i] / 100)) + " %"); // / 100?
+			printLine("\tLevel " + (i + 1) + ": " + String.format("%.2f", ((double)fogLayerAvgNwUtil[i] * 100)) + " %");
 			totalMipsUtil += (double)fogLayerAvgMipsUtil[i];
 		}
 
