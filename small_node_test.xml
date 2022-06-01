@@ -8,11 +8,14 @@
 		<location>
 			<x_pos>10</x_pos>
 			<y_pos>15</y_pos>
+<altitude>0</altitude>
 			<wlan_id>0</wlan_id>
 			<level>2</level>
 			<attractiveness>1</attractiveness>
 			<wap>false</wap>
 			<moving>true</moving>
+	<dx>2</dx>
+	<dy>2</dy>
 		</location>
 		<hosts>
 			<host>
@@ -39,11 +42,14 @@
 		<location>
 			<x_pos>60</x_pos>
 			<y_pos>15</y_pos>
+<altitude>0</altitude>
 			<wlan_id>1</wlan_id>
 			<level>1</level>
 			<attractiveness>1</attractiveness>
 			<wap>false</wap>
 			<moving>true</moving>
+	<dx>2</dx>
+	<dy>2</dy>
 		</location>
 		<hosts>
 			<host>
@@ -70,11 +76,14 @@
 		<location>
 			<x_pos>110</x_pos>
 			<y_pos>15</y_pos>
+<altitude>0</altitude>
 			<wlan_id>2</wlan_id>
 			<level>0</level>
 			<attractiveness>1</attractiveness>
 			<wap>true</wap>
 			<moving>true</moving>
+	<dx>2</dx>
+	<dy>2</dy>
 		</location>
 		<hosts>
 			<host>

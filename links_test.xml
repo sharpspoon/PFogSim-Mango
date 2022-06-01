@@ -1414,8 +1414,8 @@
 			<x_pos>-87.718329</x_pos>
 			<y_pos>41.981428</y_pos>
 			<altitude>0.0</altitude>		</right>
-		<left_latency>0.09368026473969207</left_latency>
-		<right_latency>0.09368026473969207</right_latency>
+		<left_latency>0.09368026473969206</left_latency>
+		<right_latency>0.09368026473969206</right_latency>
 	</link>
 <link>
 		<name>L3.0_90.0</name>
@@ -1622,8 +1622,8 @@
 			<x_pos>-87.654711</x_pos>
 			<y_pos>41.926735</y_pos>
 			<altitude>0.0</altitude>		</right>
-		<left_latency>0.040364200489606115</left_latency>
-		<right_latency>0.040364200489606115</right_latency>
+		<left_latency>0.0403642004896061</left_latency>
+		<right_latency>0.0403642004896061</right_latency>
 	</link>
 <link>
 		<name>L11.0_106.0</name>
@@ -1986,8 +1986,8 @@
 			<x_pos>-87.718329</x_pos>
 			<y_pos>41.981428</y_pos>
 			<altitude>0.0</altitude>		</right>
-		<left_latency>0.07490850751349552</left_latency>
-		<right_latency>0.07490850751349552</right_latency>
+		<left_latency>0.07490850751349551</left_latency>
+		<right_latency>0.07490850751349551</right_latency>
 	</link>
 <link>
 		<name>L2.0_134.0</name>
@@ -1999,8 +1999,8 @@
 			<x_pos>-87.654711</x_pos>
 			<y_pos>41.926735</y_pos>
 			<altitude>0.0</altitude>		</right>
-		<left_latency>0.08444781369338576</left_latency>
-		<right_latency>0.08444781369338576</right_latency>
+		<left_latency>0.08444781369338579</left_latency>
+		<right_latency>0.08444781369338579</right_latency>
 	</link>
 <link>
 		<name>L3.0_135.0</name>
@@ -2220,8 +2220,8 @@
 			<x_pos>-87.67914211</x_pos>
 			<y_pos>41.8811857</y_pos>
 			<altitude>0.0</altitude>		</right>
-		<left_latency>0.010038178237085115</left_latency>
-		<right_latency>0.010038178237085115</right_latency>
+		<left_latency>0.010038178237085114</left_latency>
+		<right_latency>0.010038178237085114</right_latency>
 	</link>
 <link>
 		<name>L23.0_152.0</name>
@@ -2298,8 +2298,8 @@
 			<x_pos>-87.76571187</x_pos>
 			<y_pos>41.88927215</y_pos>
 			<altitude>0.0</altitude>		</right>
-		<left_latency>0.019169037950848154</left_latency>
-		<right_latency>0.019169037950848154</right_latency>
+		<left_latency>0.019169037950848157</left_latency>
+		<right_latency>0.019169037950848157</right_latency>
 	</link>
 <link>
 		<name>L35.0_158.0</name>
@@ -2818,8 +2818,8 @@
 			<x_pos>-87.68994499</x_pos>
 			<y_pos>41.90287906</y_pos>
 			<altitude>0.0</altitude>		</right>
-		<left_latency>0.002174864642236594</left_latency>
-		<right_latency>0.002174864642236594</right_latency>
+		<left_latency>0.0021748646422365945</left_latency>
+		<right_latency>0.0021748646422365945</right_latency>
 	</link>
 <link>
 		<name>L86.0_198.0</name>
@@ -2831,8 +2831,8 @@
 			<x_pos>-87.76204789</x_pos>
 			<y_pos>41.99697088</y_pos>
 			<altitude>0.0</altitude>		</right>
-		<left_latency>1.2862443689416075E-4</left_latency>
-		<right_latency>1.2862443689416075E-4</right_latency>
+		<left_latency>1.2862443689416072E-4</left_latency>
+		<right_latency>1.2862443689416072E-4</right_latency>
 	</link>
 <link>
 		<name>L87.0_199.0</name>
@@ -2948,8 +2948,8 @@
 			<x_pos>-87.54980694</x_pos>
 			<y_pos>41.73057483</y_pos>
 			<altitude>0.0</altitude>		</right>
-		<left_latency>0.007680212199359331</left_latency>
-		<right_latency>0.007680212199359331</right_latency>
+		<left_latency>0.00768021219935933</left_latency>
+		<right_latency>0.00768021219935933</right_latency>
 	</link>
 <link>
 		<name>L135.0_208.0</name>
@@ -3520,8 +3520,8 @@
 			<x_pos>-87.6281928</x_pos>
 			<y_pos>41.87629985</y_pos>
 			<altitude>0.0</altitude>		</right>
-		<left_latency>0.0011885814532613358</left_latency>
-		<right_latency>0.0011885814532613358</right_latency>
+		<left_latency>0.0011885814532613356</left_latency>
+		<right_latency>0.0011885814532613356</right_latency>
 	</link>
 <link>
 		<name>L107.0_252.0</name>
@@ -5067,8 +5067,8 @@
 			<x_pos>-87.65725831</x_pos>
 			<y_pos>41.96480726</y_pos>
 			<altitude>0.0</altitude>		</right>
-		<left_latency>0.0031108335589805775</left_latency>
-		<right_latency>0.0031108335589805775</right_latency>
+		<left_latency>0.0031108335589805766</left_latency>
+		<right_latency>0.0031108335589805766</right_latency>
 	</link>
 <link>
 		<name>L32.0_371.0</name>
@@ -5197,8 +5197,8 @@
 			<x_pos>-87.56208364</x_pos>
 			<y_pos>41.76155536</y_pos>
 			<altitude>0.0</altitude>		</right>
-		<left_latency>0.006697392361425001</left_latency>
-		<right_latency>0.006697392361425001</right_latency>
+		<left_latency>0.006697392361425002</left_latency>
+		<right_latency>0.006697392361425002</right_latency>
 	</link>
 <link>
 		<name>L13.0_381.0</name>
@@ -5587,8 +5587,8 @@
 			<x_pos>-87.66274575</x_pos>
 			<y_pos>41.7299276</y_pos>
 			<altitude>0.0</altitude>		</right>
-		<left_latency>0.011606031102427049</left_latency>
-		<right_latency>0.011606031102427049</right_latency>
+		<left_latency>0.01160603110242705</left_latency>
+		<right_latency>0.01160603110242705</right_latency>
 	</link>
 <link>
 		<name>L96.0_411.0</name>
@@ -5795,8 +5795,8 @@
 			<x_pos>-87.67914211</x_pos>
 			<y_pos>41.8811857</y_pos>
 			<altitude>0.0</altitude>		</right>
-		<left_latency>0.009485345088601885</left_latency>
-		<right_latency>0.009485345088601885</right_latency>
+		<left_latency>0.009485345088601887</left_latency>
+		<right_latency>0.009485345088601887</right_latency>
 	</link>
 <link>
 		<name>L35.0_427.0</name>
@@ -5951,8 +5951,8 @@
 			<x_pos>-87.66826659</x_pos>
 			<y_pos>41.89575219</y_pos>
 			<altitude>0.0</altitude>		</right>
-		<left_latency>0.007169191988129803</left_latency>
-		<right_latency>0.007169191988129803</right_latency>
+		<left_latency>0.007169191988129802</left_latency>
+		<right_latency>0.007169191988129802</right_latency>
 	</link>
 <link>
 		<name>L83.0_439.0</name>
@@ -6094,8 +6094,8 @@
 			<x_pos>-87.7064607</x_pos>
 			<y_pos>41.8943707</y_pos>
 			<altitude>0.0</altitude>		</right>
-		<left_latency>0.0023091814523019862</left_latency>
-		<right_latency>0.0023091814523019862</right_latency>
+		<left_latency>0.0023091814523019867</left_latency>
+		<right_latency>0.0023091814523019867</right_latency>
 	</link>
 <link>
 		<name>L13.0_450.0</name>
@@ -6224,8 +6224,8 @@
 			<x_pos>-87.72649071</x_pos>
 			<y_pos>41.80121366</y_pos>
 			<altitude>0.0</altitude>		</right>
-		<left_latency>0.010472102695303005</left_latency>
-		<right_latency>0.010472102695303005</right_latency>
+		<left_latency>0.010472102695303003</left_latency>
+		<right_latency>0.010472102695303003</right_latency>
 	</link>
 <link>
 		<name>L64.0_460.0</name>
@@ -6770,8 +6770,8 @@
 			<x_pos>-87.65398155</x_pos>
 			<y_pos>41.75780175</y_pos>
 			<altitude>0.0</altitude>		</right>
-		<left_latency>0.012435637433419298</left_latency>
-		<right_latency>0.012435637433419298</right_latency>
+		<left_latency>0.012435637433419296</left_latency>
+		<right_latency>0.012435637433419296</right_latency>
 	</link>
 <link>
 		<name>L37.0_502.0</name>
@@ -6783,8 +6783,8 @@
 			<x_pos>-87.68994499</x_pos>
 			<y_pos>41.90287906</y_pos>
 			<altitude>0.0</altitude>		</right>
-		<left_latency>0.005021831274364947</left_latency>
-		<right_latency>0.005021831274364947</right_latency>
+		<left_latency>0.0050218312743649475</left_latency>
+		<right_latency>0.0050218312743649475</right_latency>
 	</link>
 <link>
 		<name>L7.0_503.0</name>
@@ -7108,8 +7108,8 @@
 			<x_pos>-87.65492072</x_pos>
 			<y_pos>41.79527942</y_pos>
 			<altitude>0.0</altitude>		</right>
-		<left_latency>0.012557671126849228</left_latency>
-		<right_latency>0.012557671126849228</right_latency>
+		<left_latency>0.01255767112684923</left_latency>
+		<right_latency>0.01255767112684923</right_latency>
 	</link>
 <link>
 		<name>L39.0_528.0</name>
@@ -7979,8 +7979,8 @@
 			<x_pos>-87.68994499</x_pos>
 			<y_pos>41.90287906</y_pos>
 			<altitude>0.0</altitude>		</right>
-		<left_latency>0.002533500915946774</left_latency>
-		<right_latency>0.002533500915946774</right_latency>
+		<left_latency>0.0025335009159467743</left_latency>
+		<right_latency>0.0025335009159467743</right_latency>
 	</link>
 <link>
 		<name>L63.0_595.0</name>
@@ -8070,8 +8070,8 @@
 			<x_pos>-87.63195792</x_pos>
 			<y_pos>41.85412074</y_pos>
 			<altitude>0.0</altitude>		</right>
-		<left_latency>0.007404724160051206</left_latency>
-		<right_latency>0.007404724160051206</right_latency>
+		<left_latency>0.007404724160051205</left_latency>
+		<right_latency>0.007404724160051205</right_latency>
 	</link>
 <link>
 		<name>L130.0_602.0</name>
@@ -8720,8 +8720,8 @@
 			<x_pos>-87.60574677</x_pos>
 			<y_pos>41.77874319</y_pos>
 			<altitude>0.0</altitude>		</right>
-		<left_latency>0.013437077301695806</left_latency>
-		<right_latency>0.013437077301695806</right_latency>
+		<left_latency>0.013437077301695804</left_latency>
+		<right_latency>0.013437077301695804</right_latency>
 	</link>
 <link>
 		<name>L141.0_652.0</name>
@@ -10020,8 +10020,8 @@
 			<x_pos>-87.6539821</x_pos>
 			<y_pos>41.94063077</y_pos>
 			<altitude>0.0</altitude>		</right>
-		<left_latency>0.0035881422521888734</left_latency>
-		<right_latency>0.0035881422521888734</right_latency>
+		<left_latency>0.003588142252188873</left_latency>
+		<right_latency>0.003588142252188873</right_latency>
 	</link>
 <link>
 		<name>L48.0_752.0</name>
@@ -10150,8 +10150,8 @@
 			<x_pos>-87.64250101</x_pos>
 			<y_pos>41.81550568</y_pos>
 			<altitude>0.0</altitude>		</right>
-		<left_latency>0.007338013971468509</left_latency>
-		<right_latency>0.007338013971468509</right_latency>
+		<left_latency>0.00733801397146851</left_latency>
+		<right_latency>0.00733801397146851</right_latency>
 	</link>
 <link>
 		<name>L96.0_762.0</name>
@@ -10618,8 +10618,8 @@
 			<x_pos>-87.64870672</x_pos>
 			<y_pos>41.92803652</y_pos>
 			<altitude>0.0</altitude>		</right>
-		<left_latency>0.005237980913928828</left_latency>
-		<right_latency>0.005237980913928828</right_latency>
+		<left_latency>0.005237980913928829</left_latency>
+		<right_latency>0.005237980913928829</right_latency>
 	</link>
 <link>
 		<name>L46.0_798.0</name>
@@ -10696,8 +10696,8 @@
 			<x_pos>-87.78589145</x_pos>
 			<y_pos>41.93666212</y_pos>
 			<altitude>0.0</altitude>		</right>
-		<left_latency>0.007724696097097932</left_latency>
-		<right_latency>0.007724696097097932</right_latency>
+		<left_latency>0.007724696097097931</left_latency>
+		<right_latency>0.007724696097097931</right_latency>
 	</link>
 <link>
 		<name>L91.0_804.0</name>
@@ -11411,8 +11411,8 @@
 			<x_pos>-87.6005</x_pos>
 			<y_pos>41.7623</y_pos>
 			<altitude>0.0</altitude>		</right>
-		<left_latency>0.010282526325098197</left_latency>
-		<right_latency>0.010282526325098197</right_latency>
+		<left_latency>0.010282526325098199</left_latency>
+		<right_latency>0.010282526325098199</right_latency>
 	</link>
 <link>
 		<name>L16.0_859.0</name>
@@ -11606,8 +11606,8 @@
 			<x_pos>-87.61826066</x_pos>
 			<y_pos>41.69440641</y_pos>
 			<altitude>0.0</altitude>		</right>
-		<left_latency>0.013441558693483744</left_latency>
-		<right_latency>0.013441558693483744</right_latency>
+		<left_latency>0.013441558693483747</left_latency>
+		<right_latency>0.013441558693483747</right_latency>
 	</link>
 <link>
 		<name>L83.0_874.0</name>
@@ -11814,8 +11814,8 @@
 			<x_pos>-87.65723452</x_pos>
 			<y_pos>41.73231676</y_pos>
 			<altitude>0.0</altitude>		</right>
-		<left_latency>0.01565414755982669</left_latency>
-		<right_latency>0.01565414755982669</right_latency>
+		<left_latency>0.015654147559826685</left_latency>
+		<right_latency>0.015654147559826685</right_latency>
 	</link>
 <link>
 		<name>L86.0_890.0</name>
@@ -11996,8 +11996,8 @@
 			<x_pos>-87.67413287</x_pos>
 			<y_pos>41.69244169</y_pos>
 			<altitude>0.0</altitude>		</right>
-		<left_latency>0.012965770217864252</left_latency>
-		<right_latency>0.012965770217864252</right_latency>
+		<left_latency>0.01296577021786425</left_latency>
+		<right_latency>0.01296577021786425</right_latency>
 	</link>
 <link>
 		<name>L121.0_904.0</name>
@@ -12347,8 +12347,8 @@
 			<x_pos>-87.60574677</x_pos>
 			<y_pos>41.77874319</y_pos>
 			<altitude>0.0</altitude>		</right>
-		<left_latency>0.0070544322655384595</left_latency>
-		<right_latency>0.0070544322655384595</right_latency>
+		<left_latency>0.007054432265538459</left_latency>
+		<right_latency>0.007054432265538459</right_latency>
 	</link>
 <link>
 		<name>L33.0_931.0</name>
@@ -12633,8 +12633,8 @@
 			<x_pos>-87.76571187</x_pos>
 			<y_pos>41.88927215</y_pos>
 			<altitude>0.0</altitude>		</right>
-		<left_latency>0.0020294952886830836</left_latency>
-		<right_latency>0.0020294952886830836</right_latency>
+		<left_latency>0.002029495288683084</left_latency>
+		<right_latency>0.002029495288683084</right_latency>
 	</link>
 <link>
 		<name>L14.0_953.0</name>
@@ -12841,8 +12841,8 @@
 			<x_pos>-87.6005</x_pos>
 			<y_pos>41.7623</y_pos>
 			<altitude>0.0</altitude>		</right>
-		<left_latency>0.005529013028000229</left_latency>
-		<right_latency>0.005529013028000229</right_latency>
+		<left_latency>0.005529013028000231</left_latency>
+		<right_latency>0.005529013028000231</right_latency>
 	</link>
 <link>
 		<name>L125.0_969.0</name>
@@ -13049,8 +13049,8 @@
 			<x_pos>-87.68994499</x_pos>
 			<y_pos>41.90287906</y_pos>
 			<altitude>0.0</altitude>		</right>
-		<left_latency>0.004389775648576331</left_latency>
-		<right_latency>0.004389775648576331</right_latency>
+		<left_latency>0.004389775648576333</left_latency>
+		<right_latency>0.004389775648576333</right_latency>
 	</link>
 <link>
 		<name>L137.0_985.0</name>
@@ -13231,8 +13231,8 @@
 			<x_pos>-87.66812159</x_pos>
 			<y_pos>41.77933436</y_pos>
 			<altitude>0.0</altitude>		</right>
-		<left_latency>0.010931872070674023</left_latency>
-		<right_latency>0.010931872070674023</right_latency>
+		<left_latency>0.010931872070674024</left_latency>
+		<right_latency>0.010931872070674024</right_latency>
 	</link>
 <link>
 		<name>L18.0_999.0</name>
@@ -13244,8 +13244,8 @@
 			<x_pos>-87.56860914</x_pos>
 			<y_pos>41.72244296</y_pos>
 			<altitude>0.0</altitude>		</right>
-		<left_latency>0.010472603955940246</left_latency>
-		<right_latency>0.010472603955940246</right_latency>
+		<left_latency>0.010472603955940248</left_latency>
+		<right_latency>0.010472603955940248</right_latency>
 	</link>
 <link>
 		<name>L29.0_1000.0</name>
@@ -13348,8 +13348,8 @@
 			<x_pos>-87.60223026</x_pos>
 			<y_pos>41.65473022</y_pos>
 			<altitude>0.0</altitude>		</right>
-		<left_latency>0.010116682687881415</left_latency>
-		<right_latency>0.010116682687881415</right_latency>
+		<left_latency>0.010116682687881413</left_latency>
+		<right_latency>0.010116682687881413</right_latency>
 	</link>
 <link>
 		<name>L140.0_1008.0</name>
@@ -13543,8 +13543,8 @@
 			<x_pos>-87.65725831</x_pos>
 			<y_pos>41.96480726</y_pos>
 			<altitude>0.0</altitude>		</right>
-		<left_latency>0.004045401301637165</left_latency>
-		<right_latency>0.004045401301637165</right_latency>
+		<left_latency>0.004045401301637164</left_latency>
+		<right_latency>0.004045401301637164</right_latency>
 	</link>
 <link>
 		<name>L27.0_1023.0</name>
@@ -13569,8 +13569,8 @@
 			<x_pos>-87.67075771</x_pos>
 			<y_pos>41.9403136</y_pos>
 			<altitude>0.0</altitude>		</right>
-		<left_latency>0.01660681382484742</left_latency>
-		<right_latency>0.01660681382484742</right_latency>
+		<left_latency>0.016606813824847425</left_latency>
+		<right_latency>0.016606813824847425</right_latency>
 	</link>
 <link>
 		<name>L107.0_1025.0</name>
@@ -13751,8 +13751,8 @@
 			<x_pos>-87.66826659</x_pos>
 			<y_pos>41.89575219</y_pos>
 			<altitude>0.0</altitude>		</right>
-		<left_latency>0.007742495559475449</left_latency>
-		<right_latency>0.007742495559475449</right_latency>
+		<left_latency>0.007742495559475448</left_latency>
+		<right_latency>0.007742495559475448</right_latency>
 	</link>
 <link>
 		<name>L91.0_1039.0</name>
@@ -13816,8 +13816,8 @@
 			<x_pos>-87.78589145</x_pos>
 			<y_pos>41.93666212</y_pos>
 			<altitude>0.0</altitude>		</right>
-		<left_latency>0.013195845290850203</left_latency>
-		<right_latency>0.013195845290850203</right_latency>
+		<left_latency>0.0131958452908502</left_latency>
+		<right_latency>0.0131958452908502</right_latency>
 	</link>
 <link>
 		<name>L41.0_1044.0</name>

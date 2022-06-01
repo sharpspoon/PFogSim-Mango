@@ -57,7 +57,7 @@ classdef configuration
             scriptPath = pwd;
             if strcmpi(newConfig.FolderPath, oldConfig.FolderPath)
                 while 1
-                    splitPath = strsplit(pwd, '\');
+                    splitPath = strsplit(pwd, '/');
                     if contains(splitPath(length(splitPath)), 'PFogSim')
                         break
                     end
