@@ -7,6 +7,7 @@ import java.util.HashMap;
 import edu.auburn.pFogSim.netsim.*;
 import edu.auburn.pFogSim.util.DataInterpreter;
 import edu.boun.edgecloudsim.utils.Location;
+import edu.boun.edgecloudsim.utils.SimLogger;
 
 
 /**
@@ -29,8 +30,6 @@ public class FogHierCluster {
 		HashMap<Integer, ArrayList<Location>> levelMap = new HashMap<Integer, ArrayList<Location>>();
 		int level = 1000;
 		double x_pos = -1.0, y_pos = -1.0, a_pos = -1.0;
-		int[] clusterCount = {100, 40, 20, 10, 3, 1, 1}; // Shaik added - number of clusters to be created in a given layer.
-		double[] maxLatency = {2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0}; // Shaik added - max latency between any two nodes in a given layer is 2 msec.
 		double[] maxDistance = {200, 500, 750, 1250, 1000, 3000, 4000}; // Shaik added - max distance between any two nodes in a given layer is 2 msec.
 		
 		ArrayList<Location> newList = new ArrayList<>();
@@ -58,8 +57,6 @@ public class FogHierCluster {
 		//Create clusters of nodes at each fog layer & save the configuration in clusterList
 		for(int levelIter = 1; levelIter <= MAX_FOG_LAYERS; levelIter++)
 		{
-			//FogCluster fc = new FogCluster(levelMap.get(levelIter), levelIter, clusterCount[levelIter-1]); // Create specified number of clusters in each layer.
-			//FogCluster fc = new FogCluster(levelMap.get(levelIter), levelIter, maxLatency[levelIter-1]); // Clusters defined by maximum latency among members of each cluster.
 			FogCluster fc = new FogCluster(levelMap.get(levelIter), levelIter, maxDistance[levelIter-1]); // Clusters defined by maximum latency among members of each cluster.
 
 			clusterList.add(fc);
@@ -196,239 +193,6 @@ public class FogHierCluster {
 	public void setClusterList(ArrayList<FogCluster> clusterList) {
 		this.clusterList = clusterList;
 	}
-	
-/*	private static void makeClusters() {
-		double distance = 0;
-		double clusterMaxDistance = 0 ;
-		double minDistance = Double.MAX_VALUE;
-		int parent = 0;
-		int[] parentCluster;
-		
-		//System.out.println("makeClusters reached");
-		
-		
-		int clusterNumber1 = 100;
-		String fileName1 = new String("C:\\Users\\cpj0009\\git\\pFogSim\\src\\edu\\auburn\\pFogSim\\kmcluster\\LocData-L1-500");
-		FogCluster fc1 = new FogCluster(fileName1, clusterNumber1);
-		Integer[][][] clusterSet1 = fc1.getCluster(); 
-		for (int i=0; i<clusterNumber1; i++){
-			//System.out.println("ClusterId  ClusterSize: "+i+"   "+clusterSet1[i].length);
-		}		
-		System.out.println("ClusterSet1 = " + clusterSet1[0][0][1]);
-		int clusterNumber2 = 41;
-		String fileName2 = new String("C:\\Users\\cpj0009\\git\\pFogSim\\src\\edu\\auburn\\pFogSim\\kmcluster\\LocData-L2-200");
-		FogCluster fc2 = new FogCluster(fileName2, clusterNumber2);
-		Integer[][][] clusterSet2 = fc2.getCluster();
-		for (int i=0; i<clusterNumber2; i++){
-			//System.out.println("ClusterId  ClusterSize: "+i+"   "+clusterSet2[i].length);
-		}		
-		//System.out.println("ClusterSet2 = " + clusterSet2);
-		int clusterNumber3 = 20;
-		String fileName3 = new String("C:\\Users\\cpj0009\\git\\pFogSim\\src\\edu\\auburn\\pFogSim\\kmcluster\\LocData-L3-50");
-		FogCluster fc3 = new FogCluster(fileName3, clusterNumber3);
-		Integer[][][] clusterSet3 = fc3.getCluster();
-		for (int i=0; i<clusterNumber3; i++){
-			//System.out.println("ClusterId  ClusterSize: "+i+"   "+clusterSet3[i].length);
-		}		
-		//System.out.println("ClusterSet3 = " + clusterSet3);
-		int clusterNumber4 = 3;
-		String fileName4 = new String("C:\\Users\\cpj0009\\git\\pFogSim\\src\\edu\\auburn\\pFogSim\\kmcluster\\LocData-L4-10");
-		FogCluster fc4 = new FogCluster(fileName4, clusterNumber4);
-		Integer[][][] clusterSet4 = fc4.getCluster();
-		for (int i=0; i<clusterNumber4; i++){
-			//System.out.println("ClusterId  ClusterSize: "+i+"   "+clusterSet4[i].length);
-		}
-		//System.out.println("ClusterSet4 = " + clusterSet4);
-		
-		//Now, for each set of clusters in adjacent layers, repeat the following:
-		//Say clusters in layer-3 & layer-4
-		
-		parentCluster = new int[clusterNumber3];
-		
-		//For each cluster in lower layer, do the following
-		for (int cLower=0; cLower<clusterNumber3; cLower++){
-			minDistance = Double.MAX_VALUE;
-			parent = 0;
-			
-			//For each cluster in upper layer, do the following
-			for(int cUpper=0; cUpper<clusterNumber4; cUpper++){
-				
-				clusterMaxDistance = 0;
-				//Calculate the ('max' for CompleteLink) distance between cluster from lower layer 'cLower'
-				//and cluster from higher layer 'cUpper'
-				// i.e. find the distance between each point of 'cLower' cluster 
-				// and each point of 'cUpper' cluster
-				// Note the maximum distance
-				
-				//From each point of 'cLower' cluster
-				for (int cLoweri=0; cLoweri<clusterSet3[cLower].length; cLoweri++){
-					// Get point coordinates
-					int x1 = clusterSet3[cLower][cLoweri][0];
-					int y1 = clusterSet3[cLower][cLoweri][1];
-					
-					//To each point of 'cUpper' cluster
-					for (int cUpperj=0; cUpperj<clusterSet4[cUpper].length; cUpperj++){
-						// Get point coordinates
-						int x2 = clusterSet4[cUpper][cUpperj][0];
-						int y2 = clusterSet4[cUpper][cUpperj][1];
-												
-						//find the distance
-						distance = Math.sqrt(((x2-x1)*(x2-x1)) + ((y2-y1)*(y2-y1)));
-						////System.out.println(distance);
-						
-						// Save the maximum distance
-						if (distance > clusterMaxDistance){
-							clusterMaxDistance = distance;
-						}
-						
-					}// end for cUpperj
-				}// end for cLoweri
-
-				//If this is the closer upper layer cluster, then this is a better parent cluster
-				if (clusterMaxDistance < minDistance){
-					minDistance = clusterMaxDistance;
-					parentCluster[cLower] = cUpper; 
-				}
-				
-			}// end for cUpper
-		}// end for cLower
-		
-		//Print Parent/Child relationships
-		System.out.println("ChildCluster"+"   "+"ParentCluster");
-		for (int cLower=0; cLower<clusterNumber3; cLower++){
-			System.out.println("         "+cLower+"   "+"         "+parentCluster[cLower]);
-		}// end for cLower-Print
-
-		
-		
-		//Now, for each set of clusters in adjacent layers, repeat the following:
-		//Say clusters in layer-2 & layer-3
-		
-		parentCluster = new int[clusterNumber2];
-		
-		//For each cluster in lower layer, do the following
-		for (int cLower=0; cLower<clusterNumber2; cLower++){
-			minDistance = Double.MAX_VALUE;
-			parent = 0;
-			
-			//For each cluster in upper layer, do the following
-			for(int cUpper=0; cUpper<clusterNumber3; cUpper++){
-				
-				clusterMaxDistance = 0;
-				//Calculate the ('max' for CompleteLink) distance between cluster from lower layer 'cLower'
-				//and cluster from higher layer 'cUpper'
-				// i.e. find the distance between each point of 'cLower' cluster 
-				// and each point of 'cUpper' cluster
-				// Note the maximum distance
-				
-				//From each point of 'cLower' cluster
-				for (int cLoweri=0; cLoweri<clusterSet2[cLower].length; cLoweri++){
-					// Get point coordinates
-					int x1 = clusterSet2[cLower][cLoweri][0];
-					int y1 = clusterSet2[cLower][cLoweri][1];
-					
-					//To each point of 'cUpper' cluster
-					for (int cUpperj=0; cUpperj<clusterSet3[cUpper].length; cUpperj++){
-						// Get point coordinates
-						int x2 = clusterSet3[cUpper][cUpperj][0];
-						int y2 = clusterSet3[cUpper][cUpperj][1];
-												
-						//find the distance
-						distance = Math.sqrt(((x2-x1)*(x2-x1)) + ((y2-y1)*(y2-y1)));
-						////System.out.println(distance);
-						
-						// Save the maximum distance
-						if (distance > clusterMaxDistance){
-							clusterMaxDistance = distance;
-						}
-						
-					}// end for cUpperj
-				}// end for cLoweri
-
-				//If this is the closer upper layer cluster, then this is a better parent cluster
-				if (clusterMaxDistance < minDistance){
-					minDistance = clusterMaxDistance;
-					parentCluster[cLower] = cUpper; 
-				}
-				
-			}// end for cUpper
-		}// end for cLower
-		
-		//Print Parent/Child relationships
-		System.out.println("ChildCluster"+"   "+"ParentCluster");
-		for (int cLower=0; cLower<clusterNumber2; cLower++){
-			System.out.println("         "+cLower+"   "+"         "+parentCluster[cLower]);
-		}// end for cLower-Print
-		
-
-		
-		
-		//Now, for each set of clusters in adjacent layers, repeat the following:
-		//Say clusters in layer-1 & layer-2
-		
-		parentCluster = new int[clusterNumber1];
-		
-		//For each cluster in lower layer, do the following
-		for (int cLower=0; cLower<clusterNumber1; cLower++){
-			minDistance = Double.MAX_VALUE;
-			parent = 0;
-			
-			//For each cluster in upper layer, do the following
-			for(int cUpper=0; cUpper<clusterNumber2; cUpper++){
-				
-				clusterMaxDistance = 0;
-				//Calculate the ('max' for CompleteLink) distance between cluster from lower layer 'cLower'
-				//and cluster from higher layer 'cUpper'
-				// i.e. find the distance between each point of 'cLower' cluster 
-				// and each point of 'cUpper' cluster
-				// Note the maximum distance
-				
-				//From each point of 'cLower' cluster
-				for (int cLoweri=0; cLoweri<clusterSet1[cLower].length; cLoweri++){
-					// Get point coordinates
-					int x1 = clusterSet1[cLower][cLoweri][0];
-					int y1 = clusterSet1[cLower][cLoweri][1];
-					
-					//To each point of 'cUpper' cluster
-					for (int cUpperj=0; cUpperj<clusterSet2[cUpper].length; cUpperj++){
-						// Get point coordinates
-						int x2 = clusterSet2[cUpper][cUpperj][0];
-						int y2 = clusterSet2[cUpper][cUpperj][1];
-												
-						//find the distance
-						distance = Math.sqrt(((x2-x1)*(x2-x1)) + ((y2-y1)*(y2-y1)));
-						////System.out.println(distance);
-						
-						// Save the maximum distance
-						if (distance > clusterMaxDistance){
-							clusterMaxDistance = distance;
-						}
-						
-					}// end for cUpperj
-				}// end for cLoweri
-
-				//If this is the closer upper layer cluster, then this is a better parent cluster
-				if (clusterMaxDistance < minDistance){
-					minDistance = clusterMaxDistance;
-					parentCluster[cLower] = cUpper; 
-				}
-				
-			}// end for cUpper
-		}// end for cLower
-		
-		//Print Parent/Child relationships
-		System.out.println("ChildCluster"+"   "+"ParentCluster");
-		for (int cLower=0; cLower<clusterNumber1; cLower++){
-			System.out.println("         "+cLower+"   "+"         "+parentCluster[cLower]);
-		}// end for cLower-Print
-		
-
-		
-
-		
-	}// End main
-*/
-	
 	
 	/**
 	 * Save cluster info to file in XML format.

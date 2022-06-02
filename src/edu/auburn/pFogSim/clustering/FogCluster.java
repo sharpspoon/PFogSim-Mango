@@ -60,44 +60,6 @@ public class FogCluster {
 		this.points = (Double[][])_points.toArray(new Double[_points.size()][]);
 		
 	}
-		
-	
-	/**
-	 *  Method - csvInput
-	 * 
-	 */
-	/*public void csvInput(String fn){
-		try
-		{
-			java.util.List lines = new ArrayList(); 
-			java.util.List points = new ArrayList();
-			
-			// Read data points from DataSet file 
-			BufferedReader reader = new BufferedReader(new FileReader(fn));
-			String line;
-			while ((line = reader.readLine())!=null){
-				lines.add(line);
-				
-				String[] pointString = line.split(",");
-				Integer[] point = new Integer[2];
-				point[0] = Integer.parseInt(pointString[0].trim());
-				point[1] = Integer.parseInt(pointString[1].trim());
-				
-				System.out.println(point[0].getClass()+","+point[1]);
-				points.add(point);
-				
-			}// end while
-
-			this.points = (Double[][])points.toArray(new Integer[points.size()][]);
-			
-			reader.close();
-		} catch (Exception e){
-			e.printStackTrace(System.err);
-		}
-		
-	}//end csvInput()
-*/	
-	
 	
 	/**
 	 * @param clusterNumber the clusterNumber to set

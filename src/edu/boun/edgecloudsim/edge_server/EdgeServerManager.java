@@ -170,7 +170,6 @@ public class EdgeServerManager {
 		}
 		
 		((ESBModel) SimManager.getInstance().getNetworkModel()).setNetworkTopology(networkTopology);
-		//((ESBModel) SimManager.getInstance().getNetworkModel()).gravityWell();
 
 		// If HAFA Orchestrator, configure HAFA logical architecture
 		if (SimManager.getInstance().getEdgeOrchestrator() instanceof HAFAOrchestrator) {
